@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="box">
+      <h1><img class="img-logo" src="img/logo21.png" alt="Logo de la estética" /></h1>
+      <img  class="img-name" src="img/name.png" alt="">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor-main">
+
+
+    <form action="">
+      <label for="nombreApellido">Nombre y Apellido</label>
+      <input type="text" id="nombreApellido" class="input-padron" required />
+
+      <label for="nombreMascota">Nombre de tu Chaparro</label>
+      <input type="text" id="nombreMascota" class="input-padron" required />
+
+      <label for="telefono">Teléfono</label>
+      <input type="tel" id="telefono" class="input-padron" required placeholder="(xx) xxxxxxxx" />
+
+      <label for="mensaje">Mensaje</label>
+      <textarea name="" id="mensaje" class="input-padron" cols="69" rows="10"></textarea>
+
+      <fieldset>
+        <legend class="legend-title">Que servicio desea?</legend>
+
+          <label for="radioBanho"><input type="radio" name="servicio" value="banho" id="radioBanho" />Baño</label>
+
+          <label for="radioCorte"><input type="radio" name="servicio" value="corte" id="radioCorte" />Corte</label>
+
+          <label for="radioBanhoCorte">
+            <input type="radio" name="servicio" value="banhoCorte" id="radioBanhoCorte" />Baño & Corte</label>
+      </fieldset>
+
+
+      <div class="calendario">
+        <p class="calendar-title">Elija una fecha</p>
+        <input type="date" name="date">
+      </div>
+
+      <fieldset>
+        <legend class="legend-title">Elija el horario que más le convenga:</legend>
+        <select name="" id="">
+          <option value="">Mañana</option>
+          <option value="">Tarde</option>
+          <option value="">Noche</option>
+        </select>
+      </fieldset>
+
+      <label class="checkbox" for=""><input type="checkbox" />Le gustaría recibir información sobre el SPA
+        para mascotas?</label>
+
+      <input type="submit" value="Enviar " class="enviar" />
+    </form>
+
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Día</th>
+            <th>Horario</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Lunes</td>
+            <td>0800-2000</td>
+          </tr>
+          <tr>
+            <td>Martes</td>
+            <td>0800-1600</td>
+          </tr>
+          <tr>
+            <td>Miércoles</td>
+            <td>0800-2000</td>
+          </tr>
+          <tr>
+            <td>Jueves</td>
+            <td>0800-1600</td>
+          </tr>
+          <tr>
+            <td>Viernes</td>
+            <td>0800-2000</td>
+          </tr>
+
+        </tbody>
+
+
+      </table>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <img class="img-footer" src="img/footer.png" alt="Logo de la estética" />
+    <p>&copy Copyright Caparros Coquetos - 2023</p>
+  </footer>
+</body>
+
+</html>
